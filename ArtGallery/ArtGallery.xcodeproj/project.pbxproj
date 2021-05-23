@@ -28,6 +28,7 @@
 		C85D495F265AD3C400418326 /* GalleryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D495E265AD3C400418326 /* GalleryViewModelTests.swift */; };
 		C85D4961265AD50E00418326 /* MockGalleryViewModelDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4960265AD50E00418326 /* MockGalleryViewModelDependency.swift */; };
 		C85D4963265ADB8B00418326 /* CardConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4962265ADB8B00418326 /* CardConfiguration.swift */; };
+		C85D4966265ADDFF00418326 /* DynamicGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4965265ADDFF00418326 /* DynamicGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		C85D495E265AD3C400418326 /* GalleryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModelTests.swift; sourceTree = "<group>"; };
 		C85D4960265AD50E00418326 /* MockGalleryViewModelDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGalleryViewModelDependency.swift; sourceTree = "<group>"; };
 		C85D4962265ADB8B00418326 /* CardConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardConfiguration.swift; sourceTree = "<group>"; };
+		C85D4965265ADDFF00418326 /* DynamicGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		C85D48FE265AA54600418326 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				C85D4964265ADDE000418326 /* GenericViews */,
 				C85D4950265ACB4000418326 /* Api */,
 				C85D494D265AC9E300418326 /* Dependency */,
 				C85D4944265AC79500418326 /* ViewFactory */,
@@ -234,6 +237,14 @@
 				C85D4960265AD50E00418326 /* MockGalleryViewModelDependency.swift */,
 			);
 			path = Gallery;
+			sourceTree = "<group>";
+		};
+		C85D4964265ADDE000418326 /* GenericViews */ = {
+			isa = PBXGroup;
+			children = (
+				C85D4965265ADDFF00418326 /* DynamicGridView.swift */,
+			);
+			path = GenericViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +357,7 @@
 				C85D493B265AC4F000418326 /* IGalleryViewModel.swift in Sources */,
 				C85D4940265AC5E700418326 /* GalleryViewModel.swift in Sources */,
 				C85D4948265AC82300418326 /* GalleryViewFactory.swift in Sources */,
+				C85D4966265ADDFF00418326 /* DynamicGridView.swift in Sources */,
 				C85D4954265ACBC000418326 /* APIManager.swift in Sources */,
 				C85D4952265ACBA400418326 /* API.swift in Sources */,
 				C85D494C265AC90100418326 /* AppViewFactory.swift in Sources */,
