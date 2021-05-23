@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		C85D493B265AC4F000418326 /* IGalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D493A265AC4F000418326 /* IGalleryViewModel.swift */; };
 		C85D493D265AC55600418326 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D493C265AC55600418326 /* GalleryView.swift */; };
 		C85D4940265AC5E700418326 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D493F265AC5E700418326 /* GalleryViewModel.swift */; };
+		C85D4943265AC71100418326 /* NetworkingModule in Frameworks */ = {isa = PBXBuildFile; productRef = C85D4942265AC71100418326 /* NetworkingModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85D4943265AC71100418326 /* NetworkingModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,7 @@
 				C85D48E0265AA2FF00418326 /* ArtGalleryTests */,
 				C85D48EB265AA2FF00418326 /* ArtGalleryUITests */,
 				C85D48CD265AA2FD00418326 /* Products */,
+				C85D4941265AC71100418326 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +171,13 @@
 			path = domain;
 			sourceTree = "<group>";
 		};
+		C85D4941265AC71100418326 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,6 +194,9 @@
 			dependencies = (
 			);
 			name = ArtGallery;
+			packageProductDependencies = (
+				C85D4942265AC71100418326 /* NetworkingModule */,
+			);
 			productName = ArtGallery;
 			productReference = C85D48CC265AA2FD00418326 /* ArtGallery.app */;
 			productType = "com.apple.product-type.application";
@@ -620,6 +633,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C85D4942265AC71100418326 /* NetworkingModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkingModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C85D48C4265AA2FD00418326 /* Project object */;
 }
