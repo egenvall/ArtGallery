@@ -6,7 +6,7 @@ import Combine
  */
 public class RijksMuseumQueryBuilder: IQueryBuilder, IArtQueryResolver {
     private let queryUsecase: IArtQueryUsecase
-    private var currentPage = QueryParameter.page(0)
+    private var currentPage = QueryParameter.page(1)
     private var resultsPerPage = QueryParameter.resultsPerPage(20)
     private var currentSearchTerm = QueryParameter.searchTerm("")
     private let queryManager: QueryBuildManager
@@ -67,7 +67,7 @@ public class RijksMuseumQueryBuilder: IQueryBuilder, IArtQueryResolver {
      Performs a fresh search and resets any previous value of `currentPage` & `currentSearchTerm`
      */
     public func search(_ text: String) -> AnyPublisher<[IArtAsset], EndpointError> {
-        currentPage = .page(0)
+        currentPage = .page(1)
         currentSearchTerm = .searchTerm(text)
         return query()
     }

@@ -16,7 +16,7 @@ struct GalleryView<ViewModel: IGalleryViewModel>: View {
                         .onAppear {
                             viewModel.prefetchIfNeeded(index)
                         }
-                }
+                }.id(1).animation(.default)
             }
             
             SearchContainer(text: viewModel.searchInput)
@@ -24,7 +24,7 @@ struct GalleryView<ViewModel: IGalleryViewModel>: View {
             viewModel.subscribe()
         }.onReceive(horizontalSizeClass.publisher) { sizeClass in
             updateConfiguration(sizeClass == .compact ? .list : .grid)
-        }.animation(.default)
+        }
     }
     private func updateConfiguration(_ config: CardConfiguration) {
         viewModel.updateConfiguration(config)

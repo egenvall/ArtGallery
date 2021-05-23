@@ -22,8 +22,6 @@ struct DynamicImage: View {
         GeometryReader { geo in
             remoteImage(targetSize: geo.size)
                 .cancelOnDisappear(true)
-                .loadImmediately()
-                .loadDiskFileSynchronously()
                 .fade(duration: 0.15)
         }
     }
