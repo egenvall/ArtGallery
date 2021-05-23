@@ -27,6 +27,7 @@
 		C85D495C265AD27100418326 /* GalleryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D495B265AD27100418326 /* GalleryError.swift */; };
 		C85D495F265AD3C400418326 /* GalleryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D495E265AD3C400418326 /* GalleryViewModelTests.swift */; };
 		C85D4961265AD50E00418326 /* MockGalleryViewModelDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4960265AD50E00418326 /* MockGalleryViewModelDependency.swift */; };
+		C85D4963265ADB8B00418326 /* CardConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4962265ADB8B00418326 /* CardConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		C85D495B265AD27100418326 /* GalleryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryError.swift; sourceTree = "<group>"; };
 		C85D495E265AD3C400418326 /* GalleryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModelTests.swift; sourceTree = "<group>"; };
 		C85D4960265AD50E00418326 /* MockGalleryViewModelDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGalleryViewModelDependency.swift; sourceTree = "<group>"; };
+		C85D4962265ADB8B00418326 /* CardConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 				C85D4957265AD10400418326 /* ArtViewModel.swift */,
 				C85D4959265AD11B00418326 /* RemoteImageViewModel.swift */,
 				C85D495B265AD27100418326 /* GalleryError.swift */,
+				C85D4962265ADB8B00418326 /* CardConfiguration.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			files = (
 				C85D4958265AD10400418326 /* ArtViewModel.swift in Sources */,
 				C85D494F265ACA6900418326 /* GalleryDependencyResolver.swift in Sources */,
+				C85D4963265ADB8B00418326 /* CardConfiguration.swift in Sources */,
 				C85D493B265AC4F000418326 /* IGalleryViewModel.swift in Sources */,
 				C85D4940265AC5E700418326 /* GalleryViewModel.swift in Sources */,
 				C85D4948265AC82300418326 /* GalleryViewFactory.swift in Sources */,

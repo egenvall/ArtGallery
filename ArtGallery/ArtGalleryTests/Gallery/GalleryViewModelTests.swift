@@ -40,6 +40,9 @@ class ListViewModelTests: XCTestCase {
             if value == expectedResult {
                 expectation.fulfill()
             }
+            else {
+                print("Huh: \(value)")
+            }
 
         }).store(in: &disposables)
         wait(for: [expectation], timeout: 1)
