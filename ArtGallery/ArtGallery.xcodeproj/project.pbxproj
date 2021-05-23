@@ -23,6 +23,8 @@
 		C85D494F265ACA6900418326 /* GalleryDependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D494E265ACA6900418326 /* GalleryDependencyResolver.swift */; };
 		C85D4952265ACBA400418326 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4951265ACBA400418326 /* API.swift */; };
 		C85D4954265ACBC000418326 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4953265ACBC000418326 /* APIManager.swift */; };
+		C85D4958265AD10400418326 /* ArtViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4957265AD10400418326 /* ArtViewModel.swift */; };
+		C85D495A265AD11B00418326 /* RemoteImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4959265AD11B00418326 /* RemoteImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		C85D494E265ACA6900418326 /* GalleryDependencyResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDependencyResolver.swift; sourceTree = "<group>"; };
 		C85D4951265ACBA400418326 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		C85D4953265ACBC000418326 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		C85D4957265AD10400418326 /* ArtViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtViewModel.swift; sourceTree = "<group>"; };
+		C85D4959265AD11B00418326 /* RemoteImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,8 +177,9 @@
 		C85D4902265AC3D900418326 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				C85D4956265AD0EC00418326 /* view */,
+				C85D4955265AD0E700418326 /* model */,
 				C85D493E265AC5DD00418326 /* domain */,
-				C85D493C265AC55600418326 /* GalleryView.swift */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -221,6 +226,23 @@
 				C85D4953265ACBC000418326 /* APIManager.swift */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		C85D4955265AD0E700418326 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C85D4957265AD10400418326 /* ArtViewModel.swift */,
+				C85D4959265AD11B00418326 /* RemoteImageViewModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C85D4956265AD0EC00418326 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C85D493C265AC55600418326 /* GalleryView.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85D4958265AD10400418326 /* ArtViewModel.swift in Sources */,
 				C85D494F265ACA6900418326 /* GalleryDependencyResolver.swift in Sources */,
 				C85D493B265AC4F000418326 /* IGalleryViewModel.swift in Sources */,
 				C85D4940265AC5E700418326 /* GalleryViewModel.swift in Sources */,
@@ -364,6 +387,7 @@
 				C85D4952265ACBA400418326 /* API.swift in Sources */,
 				C85D494C265AC90100418326 /* AppViewFactory.swift in Sources */,
 				C85D4946265AC79E00418326 /* ViewFactory.swift in Sources */,
+				C85D495A265AD11B00418326 /* RemoteImageViewModel.swift in Sources */,
 				C85D493D265AC55600418326 /* GalleryView.swift in Sources */,
 				C85D494A265AC8EF00418326 /* AppRoute.swift in Sources */,
 				C85D48D0265AA2FD00418326 /* ArtGalleryApp.swift in Sources */,
