@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NetworkingModule">
+   </FileRef>
+   <FileRef
       location = "group:ModelsModule">
    </FileRef>
    <FileRef
