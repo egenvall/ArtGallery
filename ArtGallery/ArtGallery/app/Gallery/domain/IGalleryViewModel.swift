@@ -1,6 +1,7 @@
 import Combine
 protocol IGalleryViewModel: ObservableObject {
     var items: [ArtViewModel] { get }
-    func subscribe()
+    var searchInput: PassthroughSubject<String, Never> { get }
     func prefetchIfNeeded(_ currentIndex: Int)
+    func subscribe()
 }
