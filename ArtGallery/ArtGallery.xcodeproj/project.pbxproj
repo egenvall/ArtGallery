@@ -32,6 +32,13 @@
 		C85D496A265AE44200418326 /* SearchContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4969265AE44200418326 /* SearchContainer.swift */; };
 		C85D496C265AE45000418326 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D496B265AE45000418326 /* SearchBar.swift */; };
 		C85D496F265AE49F00418326 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D496E265AE49F00418326 /* VisualEffectView.swift */; };
+		C85D4972265AE60400418326 /* GalleryGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4971265AE60400418326 /* GalleryGridItem.swift */; };
+		C85D4975265AE6B200418326 /* DynamicImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4974265AE6B200418326 /* DynamicImage.swift */; };
+		C85D4978265AE77400418326 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C85D4977265AE77400418326 /* Kingfisher */; };
+		C85D497B265AE7D400418326 /* ImageUrlManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D497A265AE7D400418326 /* ImageUrlManipulator.swift */; };
+		C85D497D265AE80C00418326 /* ServerScalingDeterminator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D497C265AE80C00418326 /* ServerScalingDeterminator.swift */; };
+		C85D4980265AE8CD00418326 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D497F265AE8CD00418326 /* Double+Extension.swift */; };
+		C85D4983265AE8F800418326 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4982265AE8F800418326 /* ColorScheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +80,12 @@
 		C85D4969265AE44200418326 /* SearchContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContainer.swift; sourceTree = "<group>"; };
 		C85D496B265AE45000418326 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		C85D496E265AE49F00418326 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		C85D4971265AE60400418326 /* GalleryGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryGridItem.swift; sourceTree = "<group>"; };
+		C85D4974265AE6B200418326 /* DynamicImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicImage.swift; sourceTree = "<group>"; };
+		C85D497A265AE7D400418326 /* ImageUrlManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlManipulator.swift; sourceTree = "<group>"; };
+		C85D497C265AE80C00418326 /* ServerScalingDeterminator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerScalingDeterminator.swift; sourceTree = "<group>"; };
+		C85D497F265AE8CD00418326 /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		C85D4982265AE8F800418326 /* ColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85D4978265AE77400418326 /* Kingfisher in Frameworks */,
 				C85D4943265AC71100418326 /* NetworkingModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +159,8 @@
 		C85D48FE265AA54600418326 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				C85D4981265AE8E000418326 /* ColorScheme */,
+				C85D4970265AE56E00418326 /* Util */,
 				C85D4964265ADDE000418326 /* ViewComponents */,
 				C85D4950265ACB4000418326 /* Api */,
 				C85D494D265AC9E300418326 /* Dependency */,
@@ -232,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				C85D493C265AC55600418326 /* GalleryView.swift */,
+				C85D4971265AE60400418326 /* GalleryGridItem.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -280,6 +297,49 @@
 			path = visualeffect;
 			sourceTree = "<group>";
 		};
+		C85D4970265AE56E00418326 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C85D497E265AE8C000418326 /* Extension */,
+				C85D4979265AE7BD00418326 /* ImageManipulation */,
+				C85D4973265AE69600418326 /* DynamicImage */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C85D4973265AE69600418326 /* DynamicImage */ = {
+			isa = PBXGroup;
+			children = (
+				C85D4974265AE6B200418326 /* DynamicImage.swift */,
+			);
+			path = DynamicImage;
+			sourceTree = "<group>";
+		};
+		C85D4979265AE7BD00418326 /* ImageManipulation */ = {
+			isa = PBXGroup;
+			children = (
+				C85D497A265AE7D400418326 /* ImageUrlManipulator.swift */,
+				C85D497C265AE80C00418326 /* ServerScalingDeterminator.swift */,
+			);
+			path = ImageManipulation;
+			sourceTree = "<group>";
+		};
+		C85D497E265AE8C000418326 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C85D497F265AE8CD00418326 /* Double+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C85D4981265AE8E000418326 /* ColorScheme */ = {
+			isa = PBXGroup;
+			children = (
+				C85D4982265AE8F800418326 /* ColorScheme.swift */,
+			);
+			path = ColorScheme;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -298,6 +358,7 @@
 			name = ArtGallery;
 			packageProductDependencies = (
 				C85D4942265AC71100418326 /* NetworkingModule */,
+				C85D4977265AE77400418326 /* Kingfisher */,
 			);
 			productName = ArtGallery;
 			productReference = C85D48CC265AA2FD00418326 /* ArtGallery.app */;
@@ -349,6 +410,9 @@
 				Base,
 			);
 			mainGroup = C85D48C3265AA2FD00418326;
+			packageReferences = (
+				C85D4976265AE77400418326 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = C85D48CD265AA2FD00418326 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -385,9 +449,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C85D4958265AD10400418326 /* ArtViewModel.swift in Sources */,
+				C85D4972265AE60400418326 /* GalleryGridItem.swift in Sources */,
 				C85D494F265ACA6900418326 /* GalleryDependencyResolver.swift in Sources */,
 				C85D4963265ADB8B00418326 /* CardConfiguration.swift in Sources */,
+				C85D497D265AE80C00418326 /* ServerScalingDeterminator.swift in Sources */,
 				C85D493B265AC4F000418326 /* IGalleryViewModel.swift in Sources */,
+				C85D4983265AE8F800418326 /* ColorScheme.swift in Sources */,
 				C85D4940265AC5E700418326 /* GalleryViewModel.swift in Sources */,
 				C85D496C265AE45000418326 /* SearchBar.swift in Sources */,
 				C85D4948265AC82300418326 /* GalleryViewFactory.swift in Sources */,
@@ -397,9 +464,12 @@
 				C85D496A265AE44200418326 /* SearchContainer.swift in Sources */,
 				C85D494C265AC90100418326 /* AppViewFactory.swift in Sources */,
 				C85D4946265AC79E00418326 /* ViewFactory.swift in Sources */,
+				C85D4975265AE6B200418326 /* DynamicImage.swift in Sources */,
 				C85D495A265AD11B00418326 /* RemoteImageViewModel.swift in Sources */,
+				C85D497B265AE7D400418326 /* ImageUrlManipulator.swift in Sources */,
 				C85D493D265AC55600418326 /* GalleryView.swift in Sources */,
 				C85D494A265AC8EF00418326 /* AppRoute.swift in Sources */,
+				C85D4980265AE8CD00418326 /* Double+Extension.swift in Sources */,
 				C85D48D0265AA2FD00418326 /* ArtGalleryApp.swift in Sources */,
 				C85D496F265AE49F00418326 /* VisualEffectView.swift in Sources */,
 				C85D495C265AD27100418326 /* GalleryError.swift in Sources */,
@@ -667,10 +737,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		C85D4976265AE77400418326 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		C85D4942265AC71100418326 /* NetworkingModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NetworkingModule;
+		};
+		C85D4977265AE77400418326 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C85D4976265AE77400418326 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

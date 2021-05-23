@@ -6,7 +6,7 @@ struct GalleryView<ViewModel: IGalleryViewModel>: View {
         ZStack(alignment: .top) {
             DynamicGridView(viewModel.items, topInset: 100) { context in
                 let (item, proxy, config, index) = context
-                Color.blue.frame(width: proxy.size.width - 32, height: 50)
+                GalleryGridItem(item, manipulator: viewModel.imageManipulator(item.imageAsset.imageUrl), proxy: proxy, configuration: config)
                     .onAppear {
                         viewModel.prefetchIfNeeded(index)
                     }

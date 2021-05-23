@@ -5,4 +5,5 @@ protocol IGalleryViewModel: ObservableObject {
     func prefetchIfNeeded(_ currentIndex: Int)
     func subscribe()
     func updateConfiguration(_ config: CardConfiguration)
+    func imageManipulator(_ imageUrl: String) -> ImageUrlManipulator
 }

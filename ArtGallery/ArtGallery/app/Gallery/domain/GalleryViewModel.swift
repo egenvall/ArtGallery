@@ -1,14 +1,21 @@
 import Combine
 import NetworkingModule
 import Foundation
+import Kingfisher
 final class GalleryViewModel: IGalleryViewModel {
-    typealias QueryPublisher = AnyPublisher<[IArtAsset], EndpointError>
+    // MARK: - IGalleryViewModel Properties
     @Published var items: [ArtViewModel] = []
     var searchInput = PassthroughSubject<String, Never>()
-    private let resolver: ArtResolver
-    private var disposables = Set<AnyCancellable>()
     
-    ///Describes the layout of the GalleryView
+    // MARK: - Internal
+    private let resolver: ArtResolver
+    private let serverScalingDeterminator = ServerScalingDeterminator()
+    private var disposables = Set<AnyCancellable>()
+    private typealias QueryPublisher = AnyPublisher<[IArtAsset], EndpointError>
+    
+    // MARK: - Configuration
+    
+    /// Describes the layout of the GalleryView
     var configuration: CardConfiguration = .grid {
         didSet {
             resolver.addParameter(.resultsPerPage(pageSize))
@@ -27,28 +34,10 @@ final class GalleryViewModel: IGalleryViewModel {
         }
     }
     init(_ resolver: ArtResolver) {
+        ImageCache.default.memoryStorage.config.totalCostLimit = 1024 * 1024 * 100
         self.resolver = resolver
     }
-    func subscribe() {
-        monitorSearchInput()
-        search("")
-    }
-    /**
-     Beging a pagination if the currentIndex matches the `prefetchSensitivity`.
-     
-     Will also try to paginate if the `prefetchSensitivity` is less than 0 and `currentIndex` matches
-     `items.count`
-     */
-    func prefetchIfNeeded(_ currentIndex: Int) {
-        guard !items.isEmpty else {
-            return
-        }
-        let targetIndex = prefetchSensitivity < 0 ? items.count - 1 : prefetchSensitivity
-        guard currentIndex == targetIndex  else {
-            return
-        }
-        paginate()
-    }
+    
     
     // MARK: - Search Subscription
     /**
@@ -68,6 +57,7 @@ final class GalleryViewModel: IGalleryViewModel {
     // MARK: - Querying
     /// Performs a query with `text`
     private func search(_ text: String) {
+        ImageCache.default.clearMemoryCache()
         query(resolver.search(text)) { [weak self] newItems in
             self?.items = newItems
         }
@@ -115,12 +105,38 @@ final class GalleryViewModel: IGalleryViewModel {
         // EventLogger.log...
         // TODO: Toggle Published property that displays a banner for a few seconds
     }
-    // MARK: - Environment Configuration Changes
+    // MARK: - Protocol Conforming Functions
     /// Update the internal configuration if needed when the environment changes
     func updateConfiguration(_ config: CardConfiguration) {
         guard configuration != config else {
             return
         }
         configuration = config
+    }
+    /// Initiates Content Flow
+    func subscribe() {
+        monitorSearchInput()
+        search("")
+    }
+    
+    /// Returns a type of ImageUrlManipulator for the `imageUrl` if present, else `.none`
+    func imageManipulator(_ imageUrl: String) -> ImageUrlManipulator {
+        return serverScalingDeterminator.getImageUrlManipulator(imageUrl)
+    }
+    /**
+     Begin a pagination if the currentIndex matches the `prefetchSensitivity`.
+     
+     Will also try to paginate if the `prefetchSensitivity` is less than 0 and `currentIndex` matches
+     `items.count`
+     */
+    func prefetchIfNeeded(_ currentIndex: Int) {
+        guard !items.isEmpty else {
+            return
+        }
+        let targetIndex = prefetchSensitivity < 0 ? items.count - 1 : prefetchSensitivity
+        guard currentIndex == targetIndex  else {
+            return
+        }
+        paginate()
     }
 }
