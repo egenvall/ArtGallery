@@ -11,7 +11,7 @@ struct GalleryGridItem: View {
         config = configuration
     }
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             image(config)
             detailStack(config)
         }
