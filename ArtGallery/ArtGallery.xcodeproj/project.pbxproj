@@ -29,6 +29,9 @@
 		C85D4961265AD50E00418326 /* MockGalleryViewModelDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4960265AD50E00418326 /* MockGalleryViewModelDependency.swift */; };
 		C85D4963265ADB8B00418326 /* CardConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4962265ADB8B00418326 /* CardConfiguration.swift */; };
 		C85D4966265ADDFF00418326 /* DynamicGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4965265ADDFF00418326 /* DynamicGridView.swift */; };
+		C85D496A265AE44200418326 /* SearchContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4969265AE44200418326 /* SearchContainer.swift */; };
+		C85D496C265AE45000418326 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D496B265AE45000418326 /* SearchBar.swift */; };
+		C85D496F265AE49F00418326 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D496E265AE49F00418326 /* VisualEffectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		C85D4960265AD50E00418326 /* MockGalleryViewModelDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGalleryViewModelDependency.swift; sourceTree = "<group>"; };
 		C85D4962265ADB8B00418326 /* CardConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardConfiguration.swift; sourceTree = "<group>"; };
 		C85D4965265ADDFF00418326 /* DynamicGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicGridView.swift; sourceTree = "<group>"; };
+		C85D4969265AE44200418326 /* SearchContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContainer.swift; sourceTree = "<group>"; };
+		C85D496B265AE45000418326 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		C85D496E265AE49F00418326 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +145,7 @@
 		C85D48FE265AA54600418326 /* app */ = {
 			isa = PBXGroup;
 			children = (
-				C85D4964265ADDE000418326 /* GenericViews */,
+				C85D4964265ADDE000418326 /* ViewComponents */,
 				C85D4950265ACB4000418326 /* Api */,
 				C85D494D265AC9E300418326 /* Dependency */,
 				C85D4944265AC79500418326 /* ViewFactory */,
@@ -239,12 +245,39 @@
 			path = Gallery;
 			sourceTree = "<group>";
 		};
-		C85D4964265ADDE000418326 /* GenericViews */ = {
+		C85D4964265ADDE000418326 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				C85D496D265AE46800418326 /* visualeffect */,
+				C85D4968265AE42400418326 /* search */,
+				C85D4967265AE41D00418326 /* grid */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		C85D4967265AE41D00418326 /* grid */ = {
 			isa = PBXGroup;
 			children = (
 				C85D4965265ADDFF00418326 /* DynamicGridView.swift */,
 			);
-			path = GenericViews;
+			path = grid;
+			sourceTree = "<group>";
+		};
+		C85D4968265AE42400418326 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				C85D4969265AE44200418326 /* SearchContainer.swift */,
+				C85D496B265AE45000418326 /* SearchBar.swift */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		C85D496D265AE46800418326 /* visualeffect */ = {
+			isa = PBXGroup;
+			children = (
+				C85D496E265AE49F00418326 /* VisualEffectView.swift */,
+			);
+			path = visualeffect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,16 +389,19 @@
 				C85D4963265ADB8B00418326 /* CardConfiguration.swift in Sources */,
 				C85D493B265AC4F000418326 /* IGalleryViewModel.swift in Sources */,
 				C85D4940265AC5E700418326 /* GalleryViewModel.swift in Sources */,
+				C85D496C265AE45000418326 /* SearchBar.swift in Sources */,
 				C85D4948265AC82300418326 /* GalleryViewFactory.swift in Sources */,
 				C85D4966265ADDFF00418326 /* DynamicGridView.swift in Sources */,
 				C85D4954265ACBC000418326 /* APIManager.swift in Sources */,
 				C85D4952265ACBA400418326 /* API.swift in Sources */,
+				C85D496A265AE44200418326 /* SearchContainer.swift in Sources */,
 				C85D494C265AC90100418326 /* AppViewFactory.swift in Sources */,
 				C85D4946265AC79E00418326 /* ViewFactory.swift in Sources */,
 				C85D495A265AD11B00418326 /* RemoteImageViewModel.swift in Sources */,
 				C85D493D265AC55600418326 /* GalleryView.swift in Sources */,
 				C85D494A265AC8EF00418326 /* AppRoute.swift in Sources */,
 				C85D48D0265AA2FD00418326 /* ArtGalleryApp.swift in Sources */,
+				C85D496F265AE49F00418326 /* VisualEffectView.swift in Sources */,
 				C85D495C265AD27100418326 /* GalleryError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
