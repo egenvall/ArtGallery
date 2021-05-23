@@ -95,8 +95,7 @@
 		C85D48CE265AA2FD00418326 /* ArtGallery */ = {
 			isa = PBXGroup;
 			children = (
-				C85D48CF265AA2FD00418326 /* ArtGalleryApp.swift */,
-				C85D48D1265AA2FD00418326 /* ContentView.swift */,
+				C85D48FE265AA54600418326 /* app */,
 				C85D48D3265AA2FF00418326 /* Assets.xcassets */,
 				C85D48D8265AA2FF00418326 /* Info.plist */,
 				C85D48D5265AA2FF00418326 /* Preview Content */,
@@ -128,6 +127,15 @@
 				C85D48EE265AA2FF00418326 /* Info.plist */,
 			);
 			path = ArtGalleryUITests;
+			sourceTree = "<group>";
+		};
+		C85D48FE265AA54600418326 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				C85D48CF265AA2FD00418326 /* ArtGalleryApp.swift */,
+				C85D48D1265AA2FD00418326 /* ContentView.swift */,
+			);
+			path = app;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
