@@ -1,8 +1,5 @@
-//
-//  File.swift
-//  
-//
-//  Created by Kim Egenvall on 2021-05-23.
-//
-
 import Foundation
+public protocol IQueryBuilder: AnyObject {
+    @discardableResult func addParameter(_ param: QueryParameter) -> IQueryBuilder
+    func build() -> URL?
+}
