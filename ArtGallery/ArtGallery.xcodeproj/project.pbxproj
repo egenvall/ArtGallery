@@ -20,6 +20,9 @@
 		C85D4948265AC82300418326 /* GalleryViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4947265AC82300418326 /* GalleryViewFactory.swift */; };
 		C85D494A265AC8EF00418326 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4949265AC8EF00418326 /* AppRoute.swift */; };
 		C85D494C265AC90100418326 /* AppViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D494B265AC90100418326 /* AppViewFactory.swift */; };
+		C85D494F265ACA6900418326 /* GalleryDependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D494E265ACA6900418326 /* GalleryDependencyResolver.swift */; };
+		C85D4952265ACBA400418326 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4951265ACBA400418326 /* API.swift */; };
+		C85D4954265ACBC000418326 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4953265ACBC000418326 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		C85D4947265AC82300418326 /* GalleryViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewFactory.swift; sourceTree = "<group>"; };
 		C85D4949265AC8EF00418326 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
 		C85D494B265AC90100418326 /* AppViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewFactory.swift; sourceTree = "<group>"; };
+		C85D494E265ACA6900418326 /* GalleryDependencyResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDependencyResolver.swift; sourceTree = "<group>"; };
+		C85D4951265ACBA400418326 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C85D4953265ACBC000418326 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,8 @@
 		C85D48FE265AA54600418326 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				C85D4950265ACB4000418326 /* Api */,
+				C85D494D265AC9E300418326 /* Dependency */,
 				C85D4944265AC79500418326 /* ViewFactory */,
 				C85D4902265AC3D900418326 /* Gallery */,
 				C85D48CF265AA2FD00418326 /* ArtGalleryApp.swift */,
@@ -174,6 +182,7 @@
 		C85D493E265AC5DD00418326 /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				C85D4947265AC82300418326 /* GalleryViewFactory.swift */,
 				C85D493A265AC4F000418326 /* IGalleryViewModel.swift */,
 				C85D493F265AC5E700418326 /* GalleryViewModel.swift */,
 			);
@@ -191,11 +200,27 @@
 			isa = PBXGroup;
 			children = (
 				C85D4945265AC79E00418326 /* ViewFactory.swift */,
-				C85D4947265AC82300418326 /* GalleryViewFactory.swift */,
 				C85D4949265AC8EF00418326 /* AppRoute.swift */,
 				C85D494B265AC90100418326 /* AppViewFactory.swift */,
 			);
 			path = ViewFactory;
+			sourceTree = "<group>";
+		};
+		C85D494D265AC9E300418326 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				C85D494E265ACA6900418326 /* GalleryDependencyResolver.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		C85D4950265ACB4000418326 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				C85D4951265ACBA400418326 /* API.swift */,
+				C85D4953265ACBC000418326 /* APIManager.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,9 +356,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85D494F265ACA6900418326 /* GalleryDependencyResolver.swift in Sources */,
 				C85D493B265AC4F000418326 /* IGalleryViewModel.swift in Sources */,
 				C85D4940265AC5E700418326 /* GalleryViewModel.swift in Sources */,
 				C85D4948265AC82300418326 /* GalleryViewFactory.swift in Sources */,
+				C85D4954265ACBC000418326 /* APIManager.swift in Sources */,
+				C85D4952265ACBA400418326 /* API.swift in Sources */,
 				C85D494C265AC90100418326 /* AppViewFactory.swift in Sources */,
 				C85D4946265AC79E00418326 /* ViewFactory.swift in Sources */,
 				C85D493D265AC55600418326 /* GalleryView.swift in Sources */,

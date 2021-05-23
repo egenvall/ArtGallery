@@ -7,6 +7,6 @@ struct GalleryView<ViewModel: IGalleryViewModel>: View {
             Search
             Grid
          */
-        Color.red
+        Color.blue
     }
 }
