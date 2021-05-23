@@ -37,13 +37,6 @@
 			remoteGlobalIDString = C85D48CB265AA2FD00418326;
 			remoteInfo = ArtGallery;
 		};
-		C85D48E9265AA2FF00418326 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C85D48C4265AA2FD00418326 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C85D48CB265AA2FD00418326;
-			remoteInfo = ArtGallery;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +47,6 @@
 		C85D48D8265AA2FF00418326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C85D48DD265AA2FF00418326 /* ArtGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85D48E3265AA2FF00418326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C85D48E8265AA2FF00418326 /* ArtGalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtGalleryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85D4900265AA56D00418326 /* rijksmuseum-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "rijksmuseum-Info.plist"; sourceTree = "<group>"; };
 		C85D493A265AC4F000418326 /* IGalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGalleryViewModel.swift; sourceTree = "<group>"; };
 		C85D493C265AC55600418326 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
@@ -89,13 +81,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C85D48E5265AA2FF00418326 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -114,7 +99,6 @@
 			children = (
 				C85D48CC265AA2FD00418326 /* ArtGallery.app */,
 				C85D48DD265AA2FF00418326 /* ArtGalleryTests.xctest */,
-				C85D48E8265AA2FF00418326 /* ArtGalleryUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -290,24 +274,6 @@
 			productReference = C85D48DD265AA2FF00418326 /* ArtGalleryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C85D48E7265AA2FF00418326 /* ArtGalleryUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C85D48F7265AA2FF00418326 /* Build configuration list for PBXNativeTarget "ArtGalleryUITests" */;
-			buildPhases = (
-				C85D48E4265AA2FF00418326 /* Sources */,
-				C85D48E5265AA2FF00418326 /* Frameworks */,
-				C85D48E6265AA2FF00418326 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C85D48EA265AA2FF00418326 /* PBXTargetDependency */,
-			);
-			name = ArtGalleryUITests;
-			productName = ArtGalleryUITests;
-			productReference = C85D48E8265AA2FF00418326 /* ArtGalleryUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -323,10 +289,6 @@
 					C85D48DC265AA2FF00418326 = {
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1250;
-						TestTargetID = C85D48CB265AA2FD00418326;
-					};
-					C85D48E7265AA2FF00418326 = {
-						CreatedOnToolsVersion = 12.5;
 						TestTargetID = C85D48CB265AA2FD00418326;
 					};
 				};
@@ -346,7 +308,6 @@
 			targets = (
 				C85D48CB265AA2FD00418326 /* ArtGallery */,
 				C85D48DC265AA2FF00418326 /* ArtGalleryTests */,
-				C85D48E7265AA2FF00418326 /* ArtGalleryUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -363,13 +324,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C85D48DB265AA2FF00418326 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C85D48E6265AA2FF00418326 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,13 +363,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C85D48E4265AA2FF00418326 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -423,11 +370,6 @@
 			isa = PBXTargetDependency;
 			target = C85D48CB265AA2FD00418326 /* ArtGallery */;
 			targetProxy = C85D48DE265AA2FF00418326 /* PBXContainerItemProxy */;
-		};
-		C85D48EA265AA2FF00418326 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C85D48CB265AA2FD00418326 /* ArtGallery */;
-			targetProxy = C85D48E9265AA2FF00418326 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -641,46 +583,6 @@
 			};
 			name = Release;
 		};
-		C85D48F8265AA2FF00418326 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F59U36GL6B;
-				INFOPLIST_FILE = ArtGalleryUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.egenvall.ArtGalleryUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ArtGallery;
-			};
-			name = Debug;
-		};
-		C85D48F9265AA2FF00418326 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F59U36GL6B;
-				INFOPLIST_FILE = ArtGalleryUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.egenvall.ArtGalleryUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ArtGallery;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -707,15 +609,6 @@
 			buildConfigurations = (
 				C85D48F5265AA2FF00418326 /* Debug */,
 				C85D48F6265AA2FF00418326 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C85D48F7265AA2FF00418326 /* Build configuration list for PBXNativeTarget "ArtGalleryUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C85D48F8265AA2FF00418326 /* Debug */,
-				C85D48F9265AA2FF00418326 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
