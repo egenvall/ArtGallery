@@ -1,4 +1,5 @@
 import SwiftUI
+
 struct GalleryViewFactory: ViewFactory {
     func build() -> some View {
         return Color.red
