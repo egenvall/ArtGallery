@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C85D48D0265AA2FD00418326 /* ArtGalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D48CF265AA2FD00418326 /* ArtGalleryApp.swift */; };
-		C85D48D2265AA2FD00418326 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D48D1265AA2FD00418326 /* ContentView.swift */; };
 		C85D48D4265AA2FF00418326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C85D48D3265AA2FF00418326 /* Assets.xcassets */; };
 		C85D48D7265AA2FF00418326 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C85D48D6265AA2FF00418326 /* Preview Assets.xcassets */; };
-		C85D48E2265AA2FF00418326 /* ArtGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D48E1265AA2FF00418326 /* ArtGalleryTests.swift */; };
 		C85D48ED265AA2FF00418326 /* ArtGalleryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D48EC265AA2FF00418326 /* ArtGalleryUITests.swift */; };
 		C85D4901265AA56D00418326 /* rijksmuseum-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C85D4900265AA56D00418326 /* rijksmuseum-Info.plist */; };
 		C85D493B265AC4F000418326 /* IGalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D493A265AC4F000418326 /* IGalleryViewModel.swift */; };
+		C85D493D265AC55600418326 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D493C265AC55600418326 /* GalleryView.swift */; };
+		C85D4940265AC5E700418326 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D493F265AC5E700418326 /* GalleryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,18 +37,18 @@
 /* Begin PBXFileReference section */
 		C85D48CC265AA2FD00418326 /* ArtGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85D48CF265AA2FD00418326 /* ArtGalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtGalleryApp.swift; sourceTree = "<group>"; };
-		C85D48D1265AA2FD00418326 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C85D48D3265AA2FF00418326 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C85D48D6265AA2FF00418326 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C85D48D8265AA2FF00418326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C85D48DD265AA2FF00418326 /* ArtGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C85D48E1265AA2FF00418326 /* ArtGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtGalleryTests.swift; sourceTree = "<group>"; };
 		C85D48E3265AA2FF00418326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C85D48E8265AA2FF00418326 /* ArtGalleryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtGalleryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85D48EC265AA2FF00418326 /* ArtGalleryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtGalleryUITests.swift; sourceTree = "<group>"; };
 		C85D48EE265AA2FF00418326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C85D4900265AA56D00418326 /* rijksmuseum-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "rijksmuseum-Info.plist"; sourceTree = "<group>"; };
 		C85D493A265AC4F000418326 /* IGalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGalleryViewModel.swift; sourceTree = "<group>"; };
+		C85D493C265AC55600418326 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		C85D493F265AC5E700418326 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,6 @@
 		C85D48E0265AA2FF00418326 /* ArtGalleryTests */ = {
 			isa = PBXGroup;
 			children = (
-				C85D48E1265AA2FF00418326 /* ArtGalleryTests.swift */,
 				C85D48E3265AA2FF00418326 /* Info.plist */,
 			);
 			path = ArtGalleryTests;
@@ -139,7 +138,6 @@
 			children = (
 				C85D4902265AC3D900418326 /* Gallery */,
 				C85D48CF265AA2FD00418326 /* ArtGalleryApp.swift */,
-				C85D48D1265AA2FD00418326 /* ContentView.swift */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -155,9 +153,19 @@
 		C85D4902265AC3D900418326 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
-				C85D493A265AC4F000418326 /* IGalleryViewModel.swift */,
+				C85D493E265AC5DD00418326 /* domain */,
+				C85D493C265AC55600418326 /* GalleryView.swift */,
 			);
 			path = Gallery;
+			sourceTree = "<group>";
+		};
+		C85D493E265AC5DD00418326 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				C85D493A265AC4F000418326 /* IGalleryViewModel.swift */,
+				C85D493F265AC5E700418326 /* GalleryViewModel.swift */,
+			);
+			path = domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C85D493B265AC4F000418326 /* IGalleryViewModel.swift in Sources */,
-				C85D48D2265AA2FD00418326 /* ContentView.swift in Sources */,
+				C85D4940265AC5E700418326 /* GalleryViewModel.swift in Sources */,
+				C85D493D265AC55600418326 /* GalleryView.swift in Sources */,
 				C85D48D0265AA2FD00418326 /* ArtGalleryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +309,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C85D48E2265AA2FF00418326 /* ArtGalleryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
