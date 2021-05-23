@@ -2,7 +2,6 @@ import XCTest
 import Combine
 @testable import NetworkingModule
 @testable import ModelsModule
-
 final class RijksMuseumQueryUsecaseTests: XCTestCase {
     private var disposables: Set<AnyCancellable>!
     override func setUp() {

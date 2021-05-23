@@ -1,6 +1,5 @@
 import XCTest
 @testable import NetworkingModule
-
 final class RijksMuseumQueryBuilderTests: XCTestCase {
     private var builder: IQueryBuilder!
     private let baseUrl = "https://www.testurl.com?param=abc"

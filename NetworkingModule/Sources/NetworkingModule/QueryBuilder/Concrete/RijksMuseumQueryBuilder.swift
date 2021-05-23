@@ -4,7 +4,7 @@ import Combine
  QueryBuilder for the RijksMuseum API that formats the available parameters
  according to API conformance
  */
-public class RijksMuseumQueryBuilder: IQueryBuilder {
+public class RijksMuseumQueryBuilder: IQueryBuilder, IArtQueryResolver {
     private let queryUsecase: IArtQueryUsecase
     private var currentPage = QueryParameter.page(0)
     private var resultsPerPage = QueryParameter.resultsPerPage(20)
