@@ -3,8 +3,7 @@ import Combine
 
 struct EndpointRepository: IEndpointRepository {
     private var decoder = JSONDecoder()
-    public init(){
-    }
+    public init(){}
     public func request<T: Decodable>(_ url: URL) -> AnyPublisher<T, EndpointError> {
         URLSession.shared
             .dataTaskPublisher(for: url) // A caching strategy is needed
