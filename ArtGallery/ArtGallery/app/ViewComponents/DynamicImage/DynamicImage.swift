@@ -22,14 +22,9 @@ struct DynamicImage: View {
         GeometryReader { geo in
             remoteImage(targetSize: geo.size)
                 .cancelOnDisappear(true)
+                .loadImmediately()
+                .loadDiskFileSynchronously()
                 .fade(duration: 0.15)
-                
-            /*
-             Depending on what we're trying to achieve, we can also set
-             .downloadPriority
-             .loadImmediately()
-             .loadDiskFileSynchronously()
-             */
         }
     }
     private func remoteImage(targetSize: CGSize) -> KFImage {

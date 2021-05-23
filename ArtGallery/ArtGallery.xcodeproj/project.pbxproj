@@ -265,6 +265,7 @@
 		C85D4964265ADDE000418326 /* ViewComponents */ = {
 			isa = PBXGroup;
 			children = (
+				C85D4973265AE69600418326 /* DynamicImage */,
 				C85D496D265AE46800418326 /* visualeffect */,
 				C85D4968265AE42400418326 /* search */,
 				C85D4967265AE41D00418326 /* grid */,
@@ -302,7 +303,6 @@
 			children = (
 				C85D497E265AE8C000418326 /* Extension */,
 				C85D4979265AE7BD00418326 /* ImageManipulation */,
-				C85D4973265AE69600418326 /* DynamicImage */,
 			);
 			path = Util;
 			sourceTree = "<group>";
