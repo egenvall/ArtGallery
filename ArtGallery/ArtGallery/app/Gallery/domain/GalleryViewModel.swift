@@ -115,4 +115,12 @@ final class GalleryViewModel: IGalleryViewModel {
         // EventLogger.log...
         // TODO: Toggle Published property that displays a banner for a few seconds
     }
+    // MARK: - Environment Configuration Changes
+    /// Update the internal configuration if needed when the environment changes
+    func updateConfiguration(_ config: CardConfiguration) {
+        guard configuration != config else {
+            return
+        }
+        configuration = config
+    }
 }
