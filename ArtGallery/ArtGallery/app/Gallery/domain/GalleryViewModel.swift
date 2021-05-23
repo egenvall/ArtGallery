@@ -57,6 +57,7 @@ final class GalleryViewModel: IGalleryViewModel {
     // MARK: - Querying
     /// Performs a query with `text`
     private func search(_ text: String) {
+        // TODO: Scroll to top
         ImageCache.default.clearMemoryCache()
         query(resolver.search(text)) { [weak self] newItems in
             self?.items = newItems

@@ -5,13 +5,20 @@ struct GalleryView<ViewModel: IGalleryViewModel>: View {
     var body: some View {
         ZStack(alignment: .top) {
             Color(ColorScheme.background.rawValue).edgesIgnoringSafeArea(.all)
-            DynamicGridView(viewModel.items, topInset: 100) { context in
-                let (item, proxy, config, index) = context
-                GalleryGridItem(item, manipulator: viewModel.imageManipulator(item.imageAsset.imageUrl), proxy: proxy, configuration: config)
-                    .onAppear {
-                        viewModel.prefetchIfNeeded(index)
-                    }
+            // TODO: Make it state based to handle all scenarios
+            if viewModel.items.isEmpty {
+                GalleryEmptyStateView().ignoresSafeArea(.keyboard)
             }
+            else {
+                DynamicGridView(viewModel.items, topInset: 100) { context in
+                    let (item, proxy, config, index) = context
+                    GalleryGridItem(item, manipulator: viewModel.imageManipulator(item.imageAsset.imageUrl), proxy: proxy, configuration: config)
+                        .onAppear {
+                            viewModel.prefetchIfNeeded(index)
+                        }
+                }
+            }
+            
             SearchContainer(text: viewModel.searchInput)
         }.onAppear {
             viewModel.subscribe()

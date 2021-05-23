@@ -39,6 +39,7 @@
 		C85D497D265AE80C00418326 /* ServerScalingDeterminator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D497C265AE80C00418326 /* ServerScalingDeterminator.swift */; };
 		C85D4980265AE8CD00418326 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D497F265AE8CD00418326 /* Double+Extension.swift */; };
 		C85D4983265AE8F800418326 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4982265AE8F800418326 /* ColorScheme.swift */; };
+		C85D4985265AF0F100418326 /* GalleryEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4984265AF0F100418326 /* GalleryEmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		C85D497C265AE80C00418326 /* ServerScalingDeterminator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerScalingDeterminator.swift; sourceTree = "<group>"; };
 		C85D497F265AE8CD00418326 /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		C85D4982265AE8F800418326 /* ColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
+		C85D4984265AF0F100418326 /* GalleryEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryEmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +251,7 @@
 			children = (
 				C85D493C265AC55600418326 /* GalleryView.swift */,
 				C85D4971265AE60400418326 /* GalleryGridItem.swift */,
+				C85D4984265AF0F100418326 /* GalleryEmptyStateView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				C85D494C265AC90100418326 /* AppViewFactory.swift in Sources */,
 				C85D4946265AC79E00418326 /* ViewFactory.swift in Sources */,
 				C85D4975265AE6B200418326 /* DynamicImage.swift in Sources */,
+				C85D4985265AF0F100418326 /* GalleryEmptyStateView.swift in Sources */,
 				C85D495A265AD11B00418326 /* RemoteImageViewModel.swift in Sources */,
 				C85D497B265AE7D400418326 /* ImageUrlManipulator.swift in Sources */,
 				C85D493D265AC55600418326 /* GalleryView.swift in Sources */,
