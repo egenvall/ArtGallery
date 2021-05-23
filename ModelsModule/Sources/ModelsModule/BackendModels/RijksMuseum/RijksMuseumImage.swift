@@ -1,8 +1,4 @@
-//
-//  File.swift
-//  
-//
-//  Created by Kim Egenvall on 2021-05-23.
-//
-
-import Foundation
+public struct RijksMuseumImage: Decodable {
+    public let width, height: Int
+    public let url: String
+}

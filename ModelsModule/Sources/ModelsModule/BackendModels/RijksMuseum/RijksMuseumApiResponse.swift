@@ -1,3 +1,3 @@
 public struct RijksMuseumAPIResponse: Decodable {
-    public let artObjects: [ArtObject]
+    public let artObjects: [RijksMuseumArtObject]
 }
