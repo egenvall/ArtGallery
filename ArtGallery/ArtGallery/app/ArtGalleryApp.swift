@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct ArtGalleryApp: App {
+    private let mainFactory = GalleryViewFactory()
     var body: some Scene {
         WindowGroup {
-            GalleryView(viewModel: GalleryViewModel())
+            mainFactory.build()
         }
     }
 }

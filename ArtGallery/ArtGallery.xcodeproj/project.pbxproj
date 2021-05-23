@@ -16,6 +16,8 @@
 		C85D493D265AC55600418326 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D493C265AC55600418326 /* GalleryView.swift */; };
 		C85D4940265AC5E700418326 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D493F265AC5E700418326 /* GalleryViewModel.swift */; };
 		C85D4943265AC71100418326 /* NetworkingModule in Frameworks */ = {isa = PBXBuildFile; productRef = C85D4942265AC71100418326 /* NetworkingModule */; };
+		C85D4946265AC79E00418326 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4945265AC79E00418326 /* ViewFactory.swift */; };
+		C85D4948265AC82300418326 /* GalleryViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85D4947265AC82300418326 /* GalleryViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		C85D493A265AC4F000418326 /* IGalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGalleryViewModel.swift; sourceTree = "<group>"; };
 		C85D493C265AC55600418326 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		C85D493F265AC5E700418326 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		C85D4945265AC79E00418326 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		C85D4947265AC82300418326 /* GalleryViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 		C85D48FE265AA54600418326 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				C85D4944265AC79500418326 /* ViewFactory */,
 				C85D4902265AC3D900418326 /* Gallery */,
 				C85D48CF265AA2FD00418326 /* ArtGalleryApp.swift */,
 			);
@@ -176,6 +181,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C85D4944265AC79500418326 /* ViewFactory */ = {
+			isa = PBXGroup;
+			children = (
+				C85D4945265AC79E00418326 /* ViewFactory.swift */,
+				C85D4947265AC82300418326 /* GalleryViewFactory.swift */,
+			);
+			path = ViewFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +327,8 @@
 			files = (
 				C85D493B265AC4F000418326 /* IGalleryViewModel.swift in Sources */,
 				C85D4940265AC5E700418326 /* GalleryViewModel.swift in Sources */,
+				C85D4948265AC82300418326 /* GalleryViewFactory.swift in Sources */,
+				C85D4946265AC79E00418326 /* ViewFactory.swift in Sources */,
 				C85D493D265AC55600418326 /* GalleryView.swift in Sources */,
 				C85D48D0265AA2FD00418326 /* ArtGalleryApp.swift in Sources */,
 			);
